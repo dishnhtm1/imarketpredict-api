@@ -5,7 +5,7 @@ from glob import glob
 
 app = FastAPI()
 
-DATA_DIR = "/mnt/c/imarketpredict/imarketpredict-module1/data/intraday"  # <- folder with all CSVs
+DATA_DIR = "/mnt/c/imarketpredict-api/iMarketPredict-Data1/imarketpredict-module1/data/intraday"  # <- folder with all CSVs
 
 def get_latest_file():
     csv_files = glob(os.path.join(DATA_DIR, "*.csv"))
